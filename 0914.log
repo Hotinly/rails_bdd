@@ -1,0 +1,54 @@
+Script started on 2016年09月14日 星期三 13时20分53秒
+holy@Holy:~/Mylab/rails_pjt$ git init
+Initialized empty Git repository in /home/holy/Mylab/rails_pjt/.git/
+holy@Holy:~/Mylab/rails_pjt$ gedit
+
+(gedit:4492): Gtk-CRITICAL **: _gtk_widget_captured_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+^C
+holy@Holy:~/Mylab/rails_pjt$ find .
+.
+./0914.log
+./.git
+./.git/description
+./.git/hooks
+./.git/hooks/pre-commit.sample
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/post-update.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/config
+./.git/HEAD
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./.git/branches
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+holy@Holy:~/Mylab/rails_pjt$ #=>c[K仓库创建完成[C[C[Cg>仓库创建完成i>仓库创建完成t>仓库创建完成[1P仓库创建完成>git仓库创建完成[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C（）[2P）[2P）[K成()隐)藏)的)[C==
+holy@Holy:~/Mylab/rails_pjt$ git config --global user.name ""H"o"l"y"
+holy@Holy:~/Mylab/rails_pjt$ git config --global user.name "Holy"[C[C[C[C[1P "Holy"[1P "Holy"[1P "Holy"[1P "Holy"w "Holy"e "Holy"[1P "Holy"[1P "Holy"e "Holy"m "Holy"a "Holy"i "Holy"l "Holy"[C[1PHoly"[1Poly"[1Ply"[1Py"[1P"[Khotinlt[Ky@163.com
+holy@Holy:~/Mylab/rails_pjt$ git config --global user.email hotinly@163.com[C[C[C[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.com[1P hotinly@163.comc hotinly@163.como hotinly@163.comr hotinly@163.come hotinly@163.com. hotinly@163.come hotinly@163.comd hotinly@163.comi hotinly@163.comt hotinly@163.como hotinly@163.comr hotinly@163.com[1Photinly@163.com[1Potinly@163.com[1Ptinly@163.com[1Pinly@163.com[1Pnly@163.com[1Ply@163.com[1Py@163.com[1P@163.com[1P163.com[1P63.com[1P3.com[1P.com[1Pcom[1Pom[1Pm[K ""s"u"b"l" "-"w"
+holy@Holy:~/Mylab/rails_pjt$ git config --global core.editor "subl -w"user.email hotinly@163.com[10Pname "Holy"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8P#=>git仓库创建完成(隐藏的)==find .[K[1Pgeditit init
+Reinitialized existing Git repository in /home/holy/Mylab/rails_pjt/.git/
+holy@Holy:~/Mylab/rails_pjt$ git init
+Initialized empty Git repository in /home/holy/Mylab/rails_pjt/.git/
+holy@Holy:~/Mylab/rails_pjt$ #=>shang[K[K[K[K[K上面几条命令无效》[K？==
+holy@Holy:~/Mylab/rails_pjt$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m0914.log[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+holy@Holy:~/Mylab/rails_pjt$ git commit =m[K[K-m[K[K""I"n"i"t"i"a"l" "c"o"m"m"i"t"
+error: pathspec 'Initial commit' did not match any file(s) known to git.
+holy@Holy:~/Mylab/rails_pjt$ git add .
