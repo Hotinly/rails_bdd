@@ -3,6 +3,7 @@
   gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/
   Edit Gemfile
 或bundle config mirror.https://rubygems.org/ https://ruby.taobao.org/
+  bundle config mirror.https://ruby.taobao.org/ https://rubygems.org/
 
 group :development, :test do
   gem 'rspec'
@@ -34,3 +35,66 @@ $rails generate cucumber:install
     gsub  config/database.yml
     gsub  config/database.yml
    force  config/database.yml
+
+=============================================
+holy@Holy:~/Mylab/rails_bdd$ rails g scaffold User name:string email:stringWARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being deferred until env.rb is called.
+  To avoid this warning, move 'gem 'cucumber-rails', :require => false' under only group :test in your Gemfile.
+  If already in the :test group, be sure you are specifying ':require => false'.
+Running via Spring preloader in process 4140
+      invoke  active_record
+      create    db/migrate/20160926022947_create_users.rb
+      create    app/models/user.rb
+      invoke    rspec
+      create      spec/models/user_spec.rb
+      invoke  resource_route
+       route    resources :users
+      invoke  scaffold_controller
+      create    app/controllers/users_controller.rb
+      invoke    erb
+      create      app/views/users
+      create      app/views/users/index.html.erb
+      create      app/views/users/edit.html.erb
+      create      app/views/users/show.html.erb
+      create      app/views/users/new.html.erb
+      create      app/views/users/_form.html.erb
+      invoke    rspec
+      create      spec/controllers/users_controller_spec.rb
+      create      spec/views/users/edit.html.erb_spec.rb
+      create      spec/views/users/index.html.erb_spec.rb
+      create      spec/views/users/new.html.erb_spec.rb
+      create      spec/views/users/show.html.erb_spec.rb
+      create      spec/routing/users_routing_spec.rb
+      invoke      rspec
+      create        spec/requests/users_spec.rb
+      invoke    helper
+      create      app/helpers/users_helper.rb
+      invoke      rspec
+      create        spec/helpers/users_helper_spec.rb
+      invoke    jbuilder
+      create      app/views/users/index.json.jbuilder
+      create      app/views/users/show.json.jbuilder
+      create      app/views/users/_user.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.scss
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.scss
+holy@Holy:~/Mylab/rails_bdd$ rake routes
+   Prefix Verb   URI Pattern               Controller#Action
+    users GET    /users(.:format)          users#index
+          POST   /users(.:format)          users#create
+ new_user GET    /users/new(.:format)      users#new
+edit_user GET    /users/:id/edit(.:format) users#edit
+     user GET    /users/:id(.:format)      users#show
+          PATCH  /users/:id(.:format)      users#update
+          PUT    /users/:id(.:format)      users#update
+          DELETE /users/:id(.:format)      users#destroy
+
+页面跳转报错：wrong number of arguments (given 2, expected 1)
+切换rails版本为：4.1.2   bundle update
+报错...
+换回4.2.5.1， 数据库0.4.2(之前0.4.4)
+跳转正常。。。。。。！
+
